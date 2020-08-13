@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM arm32v7/alpine
 RUN apk add --no-cache gcc bash wget git \
 	  py-pip python3 python3-dev \
     && rm -rf /var/cache/apk/*
